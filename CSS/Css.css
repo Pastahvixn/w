@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #a493d1; /* Персиковый (смреневый) цвет */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  margin-top: 20px; /* Добавлен отступ сверху для кнопки */
+}
+
+button {
+  font-size: 5em;
+  padding: 10px 20px;
+  background-color: #994fbb;
+  color: #ebc9f8;
+  border: none;
+  cursor: pointer;
+  margin-top: 1px; /* Добавлен отступ между вопросом и кнопкой */
+  font-family: 'Roboto Slab', serif;
+}
+
+button:hover {
+  background-color: #694c9e;
+}
+
+p#randomPhrase {
+  font-size: 3em;
+  margin-top: 10px;
+  font-family: 'Roboto Slab', serif;
+  color: #7e0fb1
+}
+
+p#question {
+  font-size: 3em;
+  margin-bottom: 2px; /* Отступ между вопросом и кнопкой */
+  font-family: 'Roboto Slab', serif;
+  color: #50096e
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Кто?</title>
+  <link rel="stylesheet" type="text/css" href="CSS\Css.css">
+</head>
+<body>
+  <p id="question">Кто ты сегодня, Луши?</p>
+  <div class="button-container">
+    <button onclick="generateRandomPhrase()">Я...</button>
+  </div>
+  <p id="randomPhrase"></p>
+
+  <script>
+    // остальной код JavaScript остается без изменений
+    const phrases = [
+      'Дурак',
+      'Дурачок',
+      'Балбес',
+      'Балда',
+      'Оболтус',
+      'Милашик',
+      'Великий и непревзойденный Лелуш ви Британия',
+      'Наглый котяра',
+      'Милый котик',
+      'Кретин',
+      'Идиот',
+      'Охреняк',
+      'Милый',
+      'Лох',
+      'Крутое яйцо'
+    ];
+
+    function generateRandomPhrase() {
+      const randomIndex = Math.floor(Math.random() * phrases.length);
+      const randomPhrase = phrases[randomIndex];
+      document.getElementById('randomPhrase').innerText = randomPhrase;
+    }
+  </script>
+</body>
+</html>
